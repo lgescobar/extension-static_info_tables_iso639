@@ -10,9 +10,9 @@
       "role": "Developer"
     }
   ],
-  "homepage": "https://forge.typo3.org/projects/extension-static_info_tables",
+  "homepage": "https://github.com/ohartwig/extension-static_info_tables_iso639",
   "support": {
-    "issues": "https://forge.typo3.org/projects/extension-static_info_tables/issues"
+    "issues": "https://github.com/ohartwig/extension-static_info_tables_iso639/issues"
   },
   "replace": {
     "static_info_tables_iso639": "*",
