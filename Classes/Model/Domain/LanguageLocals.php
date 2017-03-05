@@ -1,0 +1,107 @@
+<?php
+namespace SJBR\StaticInfoTables\Domain\Model;
+/***************************************************************
+ *  Copyright notice
+ *
+ *  (c) 2017 Kai Ole Hartwig <o.hartwig@ko-web.net>
+ *
+ *  All rights reserved
+ *
+ *  This script is part of the TYPO3 project. The TYPO3 project is
+ *  free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The GNU General Public License can be found at
+ *  http://www.gnu.org/copyleft/gpl.html.
+ *
+ *  This script is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  This copyright notice MUST APPEAR in all copies of the script!
+ ***************************************************************/
+
+/**
+ * The LanguageLocale model
+ *
+ * @copyright Copyright belongs to the respective authors
+ * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ */
+class LanguageLocales extends AbstractEntity {
+    /**
+     * ISO 639 Code
+     * @var string
+     */
+    protected $iso639 = '';
+
+    /**
+     * iso639Local
+     *
+     * @var string
+     */
+    protected $iso639Local = '';
+
+    /**
+     * iso639Name
+     *
+     * @var string
+     */
+    protected $iso639Name = '';
+
+    /**
+     * @return string
+     */
+    public function getIso639()
+    {
+        return $this->iso639;
+    }
+
+    /**
+     * @param string $iso639
+     *
+     * @return void
+     */
+    public function setIso639($iso639)
+    {
+        $this->iso639 = $iso639;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIso639Local()
+    {
+        return $this->iso639Local;
+    }
+
+    /**
+     * @param string $iso639Local
+     *
+     * @return void
+     */
+    public function setIso639Local($iso639Local)
+    {
+        $this->iso639Local = $iso639Local;
+    }
+
+    /**
+     * @return string
+     */
+    public function getIso639Name()
+    {
+        return $this->iso639Name;
+    }
+
+    /**
+     * @param string $iso639Name
+     *
+     * @return void
+     */
+    public function setIso639Name($iso639Name)
+    {
+        $this->iso639Name = $iso639Name;
+    }
+}
