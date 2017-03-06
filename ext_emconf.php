@@ -13,7 +13,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'KO-Web | Kai Ole Hartwig',
     'constraints' => [
         'depends' => [
-            'typo3' => '7.6.0-7.99.99',
+            'typo3' => '7.6.0-8.99.99',
             'static_info_tables' => '6.4.0-6.4.99',
         ],
         'conflicts' => [],
