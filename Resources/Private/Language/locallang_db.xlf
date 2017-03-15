@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-21T01:35:44Z" product-name="static_info_tables_iso639">
+		<header/>
+		<body>
+			<trans-unit id="static_languages.lg_iso_3" xml:space="preserve">
+				<source>ISO 639-2 / 639-5 three-letter code</source>
+			</trans-unit>
+			<trans-unit id="static_languages.lg_iso639" xml:space="preserve">
+				<source>ISO 639 / BCP 47 code</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

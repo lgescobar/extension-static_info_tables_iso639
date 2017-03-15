@@ -24,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SJBR\\StaticInfoTables\\": "Classes/"
+      "KOWeb\\StaticInfoTablesIso639\\": "Classes/"
     }
   }
 }

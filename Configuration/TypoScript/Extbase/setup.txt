@@ -1,22 +1,23 @@
 config.tx_extbase {
-	persistence {
-		classes {
-			SJBR\StaticInfoTables\Domain\Model\Language {
-				mapping {
-					columns {
-						lg_iso639.mapOnProperty = iso639
-					}
-				}
-			}
-			SJBR\StaticInfoTables\Domain\Model\LanguageLocals {
-				mapping {
-					columns {
-						ll_iso639.mapOnProperty = iso639
-						ll_iso639_locale.mapOnProperty = iso639Locale
-						ll_iso639_name.mapOnProperty = iso639Name
-					}
-				}
-			}
-		}
-	}
+    persistence {
+        classes {
+            KOWeb\StaticInfoTablesIso639\Domain\Model\Language {
+                mapping {
+                    tableName = static_languages
+                    columns {
+                        lg_iso_3.mapOnProperty = isoCodeA3
+                        lg_iso639.mapOnProperty = iso639
+                    }
+                }
+            }
+            KOWeb\StaticInfoTablesIso639\Domain\Model\SystemLanguage {
+                mapping {
+                    tableName = sys_language
+                    columns {
+                        static_lang_isocode.mapOnProperty = isoLanguage
+                    }
+                }
+            }
+        }
+    }
 }

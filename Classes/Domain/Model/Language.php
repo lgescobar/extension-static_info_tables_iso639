@@ -1,5 +1,5 @@
 <?php
-namespace SJBR\StaticInfoTables\Domain\Model;
+namespace KOWeb\StaticInfoTablesIso639\Domain\Model;
 /***************************************************************
  *  Copyright notice
  *
@@ -25,33 +25,49 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  ***************************************************************/
 
 /**
- * The LanguageLocale model
+ * The Language model
  *
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class LanguageLocales extends AbstractEntity {
+class Language extends \SJBR\StaticInfoTables\Domain\Model\Language
+{
     /**
-     * ISO 639 Code
+     * ISO 639-2 / 639-5 A3 language code
+     * @var string
+     */
+    protected $isoCodeA3 = '';
+
+    /**
+     * Full ISO 639-1 Code
      * @var string
      */
     protected $iso639 = '';
 
     /**
-     * iso639Local
+     * Gets the ISO 639-2 / 639-2 A3 language code
      *
-     * @var string
+     * @return string
      */
-    protected $iso639Local = '';
+    public function getIsoCodeA3()
+    {
+        return $this->isoCodeA3;
+    }
 
     /**
-     * iso639Name
+     * Sets the ISO 639-2 / 639-2 A3 language code
      *
-     * @var string
+     * @param string $isoCodeA3
+     * @return void
      */
-    protected $iso639Name = '';
+    public function setIsoCodeA3($isoCodeA3)
+    {
+        $this->isoCodeA3 = $isoCodeA3;
+    }
 
     /**
+     * Gets the full ISO 639 / BCP 47 language code
+     *
      * @return string
      */
     public function getIso639()
@@ -60,48 +76,13 @@ class LanguageLocales extends AbstractEntity {
     }
 
     /**
-     * @param string $iso639
+     * Sets the full ISO 639 / BCP 47 language code
      *
+     * @param string $iso639
      * @return void
      */
     public function setIso639($iso639)
     {
         $this->iso639 = $iso639;
-    }
-
-    /**
-     * @return string
-     */
-    public function getIso639Local()
-    {
-        return $this->iso639Local;
-    }
-
-    /**
-     * @param string $iso639Local
-     *
-     * @return void
-     */
-    public function setIso639Local($iso639Local)
-    {
-        $this->iso639Local = $iso639Local;
-    }
-
-    /**
-     * @return string
-     */
-    public function getIso639Name()
-    {
-        return $this->iso639Name;
-    }
-
-    /**
-     * @param string $iso639Name
-     *
-     * @return void
-     */
-    public function setIso639Name($iso639Name)
-    {
-        $this->iso639Name = $iso639Name;
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace SJBR\StaticInfoTables\Domain\Model;
+namespace KOWeb\StaticInfoTablesIso639\Domain\Repository;
 /***************************************************************
  *  Copyright notice
  *
@@ -24,34 +24,14 @@ namespace SJBR\StaticInfoTables\Domain\Model;
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
 
+use TYPO3\CMS\Extbase\Persistence\Repository;
+
 /**
- * The Language model
+ * The Language repository
  *
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Language extends AbstractEntity {
-    /**
-     * ISO 639 Code
-     * @var string
-     */
-    protected $iso639 = '';
-
-    /**
-     * @return string
-     */
-    public function getIso639()
-    {
-        return $this->iso639;
-    }
-
-    /**
-     * @param string $iso639
-     *
-     * @return void
-     */
-    public function setIso639($iso639)
-    {
-        $this->iso639 = $iso639;
-    }
+class LanguageRepository extends Repository
+{
 }
