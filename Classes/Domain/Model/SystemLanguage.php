@@ -59,10 +59,10 @@ class SystemLanguage extends \SJBR\StaticInfoTables\Domain\Model\SystemLanguage
     /**
      * Sets the ISO-639 language
      *
-     * @param \KOWeb\StaticInfoTablesIso639\Domain\Model\Language $isoLanguage
+     * @param \SJBR\StaticInfoTables\Domain\Model\Language $isoLanguage
      * @return void
      */
-    public function setIsoLanguage(\KOWeb\StaticInfoTablesIso639\Domain\Model\Language $isoLanguage)
+    public function setIsoLanguage(\SJBR\StaticInfoTables\Domain\Model\Language $isoLanguage)
     {
         $this->isoLanguage = $isoLanguage;
     }
@@ -70,7 +70,7 @@ class SystemLanguage extends \SJBR\StaticInfoTables\Domain\Model\SystemLanguage
     /**
      * Gets the ISO-639 language
      *
-     * @return \KOWeb\StaticInfoTablesIso639\Domain\Model\Language
+     * @return \SJBR\StaticInfoTables\Domain\Model\Language
      */
     public function getIsoLanguage()
     {
