@@ -1,7 +1,6 @@
 {
-  "name": "koweb/static-info-tables-iso629",
+  "name": "koweb/static-info-tables-iso639",
   "description": "Data and API for countries, languages and currencies.",
-  "version": "6.4.0",
   "type": "typo3-cms-extension",
   "license": "GPL-2.0+",
   "authors": [
@@ -15,12 +14,11 @@
     "issues": "https://github.com/ohartwig/extension-static_info_tables_iso639/issues"
   },
   "replace": {
-    "static_info_tables_iso639": "*",
-    "sjbr/static_info_tables_iso639": "*",
+    "static_info_tables_iso639": "self.version",
     "typo3-ter/static-info-tables-iso639": "self.version"
   },
   "require": {
-    "typo3/cms-core": ">=7.6,<9.0"
+    "typo3/cms-core": "^7.6 || ^8.7",
   },
   "autoload": {
     "psr-4": {
