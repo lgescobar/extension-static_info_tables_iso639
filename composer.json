@@ -1,5 +1,5 @@
 {
-  "name": "koweb/static-info-tables-iso639",
+  "name": "lgescobar/static-info-tables-iso639",
   "description": "Data and API for countries, languages and currencies.",
   "type": "typo3-cms-extension",
   "license": "GPL-2.0+",
